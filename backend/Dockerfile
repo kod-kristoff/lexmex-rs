@@ -4,7 +4,7 @@ RUN USER=root cargo new --bin webapp
 WORKDIR /webapp
 COPY apps/webapp/Cargo.* ./
 RUN cargo build --release
-RUN rm src/*.rs
+RUN rm -rf src
 
 COPY . .
 
