@@ -8,7 +8,7 @@ pub async fn run() -> Result<()> {
         App::new()
             .configure(handlers::web::init_routes)
     })
-    .bind(format!("{}:{}", "0.0.0.0", 8082))?
+    .bind(format!("{}:{}", "0.0.0.0", 8000))?
     .run()
     .await?;
 
